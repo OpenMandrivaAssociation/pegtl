@@ -32,6 +32,7 @@ applications that use %{name}.
 
 %build
 %cmake \
+    -DCMAKE_BUILD_TYPE=None \
     -DPEGTL_INSTALL_CMAKE_DIR:PATH=%{_datadir}/cmake/Modules \
     -DPEGTL_BUILD_EXAMPLES:BOOL=OFF \
     -DPEGTL_BUILD_TESTS:BOOL=OFF
@@ -39,7 +40,7 @@ applications that use %{name}.
 %make_build
 
 %install
-%make_install
+%make_install -C build
 
 %files devel
 %doc README.md doc/
