@@ -42,6 +42,8 @@ applications that use %{name}.
 %install
 %make_install -C build
 
+rm -rf %{buildroot}%{_docdir}/tao/pegtl/LICENSE
+
 %files devel
 %doc README.md doc/
 %license LICENSE
