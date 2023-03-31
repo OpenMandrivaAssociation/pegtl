@@ -3,7 +3,7 @@
 Summary:	Parsing Expression Grammar Template Library
 Name:		pegtl
 Version:	2.8.3
-Release:	1
+Release:	2
 Group:		Development/C++
 License:	MIT
 URL:		https://github.com/taocpp/%{name}/
